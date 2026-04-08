@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(165, 165, 165);
+}
+
+.form {
+  border: 2px solid #000;
+  border-radius: 5px;
+  margin: 100px 430px 0;
+  background-color: rgb(143, 190, 235);
+}
+
+.fieldset {
+  border: none;
+}
+
+.legent {
+  padding: 10px 0;
+}
+.block {
+  display: block;
+  margin: 5px 0;
+}
+
+.masseg {
+  width: 167px;
+  min-height: 50px;
+  max-height: 100px;
+  resize: vertical;
+}
+
+.checkbox {
+  display: block;
+  cursor: pointer;
+}
+
+.button {
+  margin: 5px 0;
+  cursor: pointer;
+}
