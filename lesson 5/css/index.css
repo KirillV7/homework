@@ -1,0 +1,93 @@
+html {
+  font-family: Ubuntu, sans-serif;
+  font-weight: 400;
+}
+
+body* {
+  box-sizing: border-box;
+}
+.article {
+  padding-top: 80px;
+  margin-bottom: 120px;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+
+.title-h1 {
+  max-width: 596px;
+  font-family: Oswald;
+  font-width: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.text-p1 {
+  max-width: 1220px;
+  margin-bottom: 20px;
+  font-family: Ubuntu;
+  font-width: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.text-p2 {
+  max-width: 1220px;
+  margin-bottom: 80px;
+  font-family: Ubuntu;
+  font-width: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.title-img {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.title-h2 {
+  margin-bottom: 40px;
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+
+.text-p3 {
+  max-width: 744px;
+  margin-bottom: 20px;
+  font-family: Ubuntu;
+  font-width: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.title-ul {
+  padding: 0 18px;
+  margin-bottom: 80px;
+}
+
+.text-li {
+  margin-bottom: 12px;
+  font-family: Ubuntu;
+  font-width: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.title-video {
+  margin-bottom: 40px;
+}
+
+.text-p4 {
+  font-family: Ubuntu;
+  font-width: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
