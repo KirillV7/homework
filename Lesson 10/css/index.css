@@ -1,0 +1,169 @@
+.hero-contanier {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 0;
+  margin-top: 80px;
+}
+
+.hero {
+  position: relative;
+}
+
+.hero::after {
+  position: absolute;
+  content: "";
+  background: url(../images/декор.svg);
+  width: 100%;
+  height: 48px;
+  z-index: -1;
+  bottom: 118px;
+}
+
+.hero-text h1 {
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  padding-bottom: 40px;
+  /* margin: 0; */
+}
+
+.hero-contanier h1 strong {
+  color: #3596ed;
+}
+
+.hero-text p {
+  max-width: 439px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #535755;
+  padding-bottom: 140px;
+  /* margin-top: 0;
+  margin-bottom: 0; */
+}
+
+.button-text {
+  display: inline-block;
+  font-family: Ubuntu;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 19px 32px;
+  background-color: #3596ed;
+  transition: opacity 0.2s;
+}
+
+.button-text:hover {
+  opacity: 0.8;
+}
+
+.hero-image {
+  display: flex;
+  position: relative;
+}
+
+.hero-choose {
+  position: absolute;
+  border: 1px solid #858e8a;
+  width: 161px;
+  height: 86px;
+  padding: 22px;
+  margin-top: 40px;
+  margin-left: 270px;
+  background-color: #ffffffec;
+}
+
+.hero-choose p {
+  font-family: Ubuntu;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000b0;
+  cursor: pointer;
+}
+
+.news-contanier {
+  padding: 0;
+}
+
+.news-block {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.news h2 {
+  font-family: Oswald;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+}
+
+.card {
+  overflow: hidden;
+  border: 1px solid #858e8a80;
+  max-width: 284px;
+  height: 342px;
+}
+
+.images {
+  display: block;
+}
+
+.info {
+  padding: 20px 20px 0;
+}
+
+.info time {
+  color: #858e8a;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.info p {
+  font-family: Ubuntu;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #000000b7;
+  margin-bottom: 12px;
+}
+
+.news-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 20px 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #3596ed;
+  text-decoration: none;
+}
+
+.news-link::after {
+  content: "";
+  background: url(../images/Arrow\ 1.svg);
+  width: 20px;
+  height: 8px;
+  transition: transform 0.2s;
+}
+
+.news-link:hover::after {
+  transform: translateX(4px);
+}
