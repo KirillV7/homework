@@ -1,0 +1,111 @@
+.characteristics__preview-video {
+  position: relative;
+}
+
+@media (width > 576px) {
+  .characteristics__preview-video {
+    margin-bottom: 60px;
+  }
+}
+
+@media (width <= 576px) {
+  .characteristics__preview-video {
+    margin-bottom: 40px;
+  }
+}
+
+.characteristics__image {
+  overflow: hidden;
+  border: 1px solid var(--main-color);
+  border-radius: 12px;
+}
+
+.characteristics__play-link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--overlay-color);
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  box-shadow:
+    0 0 5px 3px var(--main-shadow-color),
+    inset 0 0 5px 3px var(--main-shadow-color);
+  transition: var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .characteristics__play-link:hover {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 5px 3px var(--accent-color-shadow);
+  }
+}
+
+@media (width > 576px) {
+  .characteristics__play-link {
+    width: 80px;
+    height: 80px;
+  }
+
+  .characteristics__play-icon {
+    width: 17px;
+    height: 23px;
+    transform: translateX(2px);
+  }
+}
+
+@media (width <= 576px) {
+  .characteristics__play-link {
+    width: 48px;
+    height: 48px;
+  }
+
+  .characteristics__play-icon {
+    width: 10px;
+    height: 12px;
+    transform: translateX(1px);
+  }
+}
+
+.characteristics__list {
+  display: grid;
+  gap: 40px 20px;
+  grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+}
+
+.characteristics__card-icon {
+  transform: translateX(-8px);
+  margin-bottom: 5px;
+}
+
+@media (width > 576px) {
+  .characteristics__card-icon {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+@media (width <= 576px) {
+  .characteristics__card-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.characteristics__card-title {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--main-color);
+  margin-bottom: 20px;
+}
+
+.characteristics__card-text {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 140%;
+  color: var(--main-color);
+}

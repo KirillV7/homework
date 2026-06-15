@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344 344" id="nike">
+  <g id="Layer_2">
+    <g id="Layer_1-2">
+      <g id="NIKE">
+        <ellipse cx="172" cy="172" rx="77.7" ry="172" style="fill:#f79239"></ellipse>
+        <ellipse cx="171.97" cy="160.91" rx="77.7" ry="172" style="fill:#fabe88" transform="rotate(-45 171.97 160.908)"></ellipse>
+        <ellipse cx="172" cy="172" rx="172" ry="77.7" style="fill:#fde9d7"></ellipse>
+        <ellipse cx="171.97" cy="160.91" rx="172" ry="77.7" style="fill:#fcd3b0" transform="rotate(-45 171.97 160.908)"></ellipse>
+        <circle cx="178.2" cy="165.8" r="98.8" style="fill:#fff"></circle>
+        <path d="M130.61,160.67s1.52,23.36,10.13,28.22,23.75-8.51,23.75-8.51L232,115.47l-67.21,89.41a28.1,28.1,0,0,1-16.11,10.64c-5.17,1.16-10.49.79-14.32-2.19-8.89-7-9.6-22.32-9.85-27.46A44.37,44.37,0,0,1,130.61,160.67Z" style="fill:#f79239"></path>
+      </g>
+    </g>
+  </g>
+</svg>
