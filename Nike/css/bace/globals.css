@@ -2,6 +2,8 @@
   font-family: var(--font-family);
   font-weight: 400;
   color: var(--main-color);
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
 }
 
 .page__body {
@@ -16,7 +18,60 @@
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus {
   outline: 1px solid var(--accent-color);
   outline-offset: 2px;
+}
+
+.title-mb {
+  font-weight: 600;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+@media (width <= 576px) {
+  .title-mb {
+    font-size: 32px;
+  }
+}
+
+.title-regular,
+.title-light {
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--main-color);
+}
+
+.title-regular {
+  font-weight: 400;
+}
+
+.title-light {
+  font-weight: 300;
+}
+
+@media (width > 768px) {
+  .title-bottom {
+    padding-bottom: 40px;
+  }
+}
+
+@media (width <= 768px) {
+  .title-bottom {
+    padding-bottom: 30px;
+  }
+}
+
+@media (width > 768px) {
+  .section {
+    padding-bottom: 140px;
+  }
+}
+
+@media (width <= 768px) {
+  .section {
+    padding-bottom: 40px;
+  }
 }
