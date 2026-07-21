@@ -1,0 +1,136 @@
+.hero {
+  background-color: var(--hero-color);
+  overflow: hidden;
+  margin-bottom: 150px;
+}
+
+@media (width <= 768px) {
+  .hero {
+    margin-bottom: 60px;
+  }
+}
+
+@media (width <= 390px) {
+  .hero {
+    margin-bottom: 31px;
+  }
+}
+
+.hero__container {
+  position: relative;
+  display: flex;
+  padding-top: 55px;
+}
+
+.hero__description-title {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 250px 0 244px 0;
+  z-index: var(--layer-1);
+}
+
+@media (width <= 768px) {
+  .hero__description-title {
+    padding: 80px 0 121px 0;
+  }
+}
+
+@media (width <= 390px) {
+  .hero__description-title {
+    padding: 0 0 155px 0;
+  }
+}
+
+.hero__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 103%;
+  padding-bottom: 40px;
+  width: 556px;
+  color: var(--main-color);
+}
+
+@media (width <= 768px) {
+  .hero__title {
+    font-size: 30px;
+    line-height: 100%;
+    width: 363px;
+  }
+}
+
+@media (width <= 390px) {
+  .hero__title {
+    font-size: 24px;
+    padding-bottom: 20px;
+    max-width: 290px;
+  }
+}
+
+.hero__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 130%;
+  padding-bottom: 90px;
+  max-width: 554px;
+  color: var(--main-color);
+}
+
+@media (width <= 768px) {
+  .hero__text {
+    font-size: 12px;
+    max-width: 253px;
+  }
+}
+
+@media (width <= 390px) {
+  .hero__text {
+    font-size: 12px;
+    max-width: 170px;
+    padding-bottom: 40px;
+  }
+}
+
+.hero__button-link {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  border-radius: 3px;
+  padding: 15.5px 51.5px;
+  background-color: var(--accent-color);
+  color: var(--white-color);
+  transition: var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .hero__button-link:hover {
+    background-color: var(--main-color);
+  }
+}
+
+.hero__button-link:active {
+  background-color: var(--active-color);
+}
+
+@media (width <= 768px) {
+  .hero__button-link {
+    font-size: 16px;
+    padding: 7px 26.5px;
+  }
+}
+
+.hero__img {
+  position: absolute;
+  width: auto;
+  height: clamp(274px, 1.621rem + 63.61vw, 842px);
+  right: -25px;
+  bottom: clamp(-35px, -3.143rem + 3.92vw, 0px);
+  z-index: var(--layer-0);
+}
+
+@media (width <=768px) {
+  .hero__img {
+  }
+}

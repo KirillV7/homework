@@ -1,0 +1,15 @@
+/* base */
+@import "./base/normalize.css";
+@import "./base/fonts.css";
+@import "./base/vars.css";
+@import "./base/globals.css";
+
+/* blocks */
+@import "./blocks/header.css";
+@import "./blocks/hero.css";
+@import "./blocks/shopping-bag.css";
+@import "./blocks/expert-opinion.css";
+@import "./blocks/advantages.css";
+@import "./blocks/category-header.css";
+@import "./blocks/category-card.css";
+@import "./blocks/category-footer.css";

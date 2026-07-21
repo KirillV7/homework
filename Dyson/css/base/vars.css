@@ -1,0 +1,29 @@
+:root {
+  /* font-family */
+  --font-family: OpenSans, sans-serif;
+  --second-family: namupro, sans-serif;
+
+  /*   conteiner */
+  --container-width: 1283px;
+  --container-padding: 30px;
+
+  /* colors */
+  --main-color: #111;
+  --accent-color: #c5358c;
+  --white-color: #fff;
+  --green-color: #68ae5c;
+  --outline-color: #9747ff;
+  --hero-color: #dddddd;
+  --active-color: #ababab;
+  --shadow-color: rgba(0, 0, 0, 0.05);
+
+  /* transitions */
+  --transition-time: 0.2s;
+
+  /* layers */
+  --layer-negative: -1;
+  --layer-0: 0;
+  --layer-1: 1;
+  --layer-2: 2;
+  --layer-3: 3;
+}

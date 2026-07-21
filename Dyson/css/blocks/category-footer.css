@@ -1,0 +1,42 @@
+.category__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.category__footer-button {
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
+  width: 64px;
+  height: 64px;
+  transition: var(--transition-time);
+}
+
+.category__footer-button-icon {
+  fill: currentColor;
+}
+
+@media (any-hover: hover) {
+  .category__footer-button:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.category__footer-button:active {
+  color: var(--active-color);
+  border-color: var(--main-color);
+}
+
+.icon--style {
+  transform: rotate(180deg);
+}
+
+.category__footer-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--main-color);
+  margin-left: 10px;
+}

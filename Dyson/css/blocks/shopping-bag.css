@@ -1,0 +1,125 @@
+.shopping-bag__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+@media (width <= 576px) {
+  .shopping-bag__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (width <= 390px) {
+  .shopping-bag__container {
+    gap: 10px;
+  }
+}
+
+.shopping-bag__card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  box-shadow:
+    0 4px 41px 0 var(--shadow-color),
+    0 4px 41px 0 var(--shadow-color);
+}
+
+@media (width <= 768px) {
+  .shopping-bag__image {
+    width: 142px;
+    height: 142px;
+  }
+}
+
+@media (width <= 390px) {
+  .shopping-bag__image {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.shopping-bag__button {
+  border-radius: 0 0 10px 10px;
+  padding-left: clamp(12px, 0.254rem + 1.55vw, 40px);
+  transition: var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .shopping-bag__button:hover {
+    background-color: var(--main-color);
+    color: var(--white-color);
+  }
+}
+
+.shopping-bag__button:active {
+  background-color: var(--active-color);
+}
+
+.shopping-bag__link {
+  text-align: start;
+  color: var(--main-color);
+  transition: var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .shopping-bag__button:hover .shopping-bag__link {
+    color: var(--white-color);
+  }
+}
+
+.shopping-bag__link-title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: clamp(13px, -0.772rem + 3.3vw, 30px);
+  padding-top: 20px;
+  padding-bottom: 11px;
+}
+
+@media (width <= 768px) {
+  .shopping-bag__link-title {
+    padding-bottom: 5px;
+  }
+}
+
+@media (width <= 390px) {
+  .shopping-bag__link-title {
+    padding-bottom: 8px;
+  }
+}
+.shopping-bag__link-text-img {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+@media (width <= 768px) {
+  .shopping-bag__link-text-img {
+    gap: 8px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (width <= 390px) {
+  .shopping-bag__link-text-img {
+    gap: 10px;
+  }
+}
+
+.shopping-bag__link-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(11px, -0.524rem + 2.52vw, 24px);
+}
+
+@media (any-hover: hover) {
+  .shopping-bag__button:hover .shopping-bag__link-img {
+    fill: currentColor;
+  }
+}
+
+.shopping-bag__link-img {
+  width: clamp(16px, -0.678rem + 3.5vw, 34px);
+  height: auto;
+}
