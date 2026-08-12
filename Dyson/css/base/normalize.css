@@ -1,3 +1,51 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+.page {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: var(--main-color);
+  scroll-behavior: smooth;
+  scroll-padding-top: 98px;
+  scrollbar-gutter: stable;
+}
+
+.section {
+  padding-block: 150px;
+}
+
+@media (width <= 768px) {
+  .section {
+    padding: 60px 0 70px 0;
+  }
+}
+
+@media (width <= 390px) {
+  .section {
+    padding-block: 46px;
+  }
+}
+
+.container {
+  width: min(var(--container-width), 100% - var(--container-padding) * 2);
+  margin-inline: auto;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus {
+  outline: 2px dashed var(--outline-color);
+  outline-offset: 3px;
+}
+
+.img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -6,6 +54,7 @@ html {
 *,
 ::before,
 ::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -65,6 +114,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
+  -moz-appearance: button;
   appearance: button;
   -webkit-appearance: button;
 }
@@ -83,6 +133,7 @@ button::-moz-focus-inner,
 }
 
 [type="search"] {
+  -moz-appearance: textfield;
   appearance: textfield;
   -webkit-appearance: textfield;
   outline-offset: -2px;
@@ -110,5 +161,6 @@ template {
 }
 
 svg * {
+  -webkit-transition-property: fill, stroke;
   transition-property: fill, stroke;
 }

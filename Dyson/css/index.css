@@ -13,3 +13,8 @@
 @import "./blocks/category-header.css";
 @import "./blocks/category-card.css";
 @import "./blocks/category-footer.css";
+@import "./blocks/reviews.css";
+@import "./blocks/faq.css";
+@import "./blocks/news.css";
+@import "./blocks/feedback.css";
+@import "./blocks/footer.css";

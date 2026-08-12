@@ -1,16 +1,35 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 .header {
   background-color: var(--main-color);
 }
 
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .header__burger-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin-right: 10px;
 }
@@ -73,14 +92,21 @@
 }
 
 .header__menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
   gap: clamp(15px, -0.461rem + 2.91vw, 30px);
 }
 
 .header__menu-item--style {
+  -ms-flex-negative: 0;
   flex-shrink: 0;
 }
 
@@ -94,6 +120,7 @@
 .header__cart-img {
   margin-left: 3px;
   stroke: var(--white-color);
+  -webkit-transition: var(--transition-time);
   transition: var(--transition-time);
 }
 

@@ -1,0 +1,154 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+.faq {
+  background: #f8f8f8;
+}
+
+.faq__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 42px;
+  color: var(--main-color);
+  margin-bottom: 59px;
+}
+
+@media (width <= 768px) {
+  .faq__title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (width <= 390px) {
+  .faq__title {
+    font-size: 20px;
+    margin-bottom: 38px;
+  }
+
+  .faq__title-style {
+    display: none;
+  }
+}
+
+.faq__accardion {
+  border-top: 1px solid var(--active-color);
+  cursor: pointer;
+}
+
+.faq__accardion:last-child {
+  border-bottom: 1px solid var(--active-color);
+}
+
+.accardion__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 51px;
+  list-style: none;
+  padding-block: 34px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--main-color);
+}
+
+@media (width <= 768px) {
+  .accardion__text {
+    font-size: 16px;
+    line-height: 140%;
+    padding-block: 18px;
+  }
+}
+
+@media (width <= 390px) {
+  .accardion__text {
+    font-size: 13px;
+    padding-block: 16px;
+    gap: 24px;
+  }
+}
+
+.accardion__text::after {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: url("../../icons/sprite-plus.svg") no-repeat center / cover;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media (width <= 768px) {
+  .accardion__text::after {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (width <= 390px) {
+  .accardion__text::after {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+details[open] .accardion__text::after {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url("../../icons/sprite-cross.svg") no-repeat center / cover;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media (width <= 768px) {
+  details[open] .accardion__text::after {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (width <= 390px) {
+  details[open] .accardion__text::after {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.accardion__description {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--main-color);
+  max-width: 908px;
+  margin-bottom: 50px;
+}
+
+@media (width <= 768px) {
+  .accardion__description {
+    font-size: 14px;
+    line-height: 140%;
+    margin-bottom: 18px;
+  }
+}
+
+@media (width <= 390px) {
+  .accardion__description {
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+}

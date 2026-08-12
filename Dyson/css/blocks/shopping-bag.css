@@ -1,11 +1,21 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 .shopping-bag__container {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
 @media (width <= 576px) {
   .shopping-bag__container {
+    -ms-grid-columns: 1fr 15px 1fr;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
@@ -18,9 +28,17 @@
 }
 
 .shopping-bag__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   height: auto;
+  -webkit-box-shadow:
+    0 4px 41px 0 var(--shadow-color),
+    0 4px 41px 0 var(--shadow-color);
   box-shadow:
     0 4px 41px 0 var(--shadow-color),
     0 4px 41px 0 var(--shadow-color);
@@ -43,6 +61,7 @@
 .shopping-bag__button {
   border-radius: 0 0 10px 10px;
   padding-left: clamp(12px, 0.254rem + 1.55vw, 40px);
+  -webkit-transition: var(--transition-time);
   transition: var(--transition-time);
 }
 
@@ -60,6 +79,7 @@
 .shopping-bag__link {
   text-align: start;
   color: var(--main-color);
+  -webkit-transition: var(--transition-time);
   transition: var(--transition-time);
 }
 
@@ -89,6 +109,8 @@
   }
 }
 .shopping-bag__link-text-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
   padding-bottom: 30px;

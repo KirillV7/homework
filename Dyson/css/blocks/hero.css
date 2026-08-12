@@ -1,30 +1,33 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 .hero {
   background-color: var(--hero-color);
   overflow: hidden;
-  margin-bottom: 150px;
-}
-
-@media (width <= 768px) {
-  .hero {
-    margin-bottom: 60px;
-  }
-}
-
-@media (width <= 390px) {
-  .hero {
-    margin-bottom: 31px;
-  }
 }
 
 .hero__container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 55px;
 }
 
 .hero__description-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 250px 0 244px 0;
   z-index: var(--layer-1);
@@ -101,6 +104,7 @@
   padding: 15.5px 51.5px;
   background-color: var(--accent-color);
   color: var(--white-color);
+  -webkit-transition: var(--transition-time);
   transition: var(--transition-time);
 }
 
@@ -128,9 +132,4 @@
   right: -25px;
   bottom: clamp(-35px, -3.143rem + 3.92vw, 0px);
   z-index: var(--layer-0);
-}
-
-@media (width <=768px) {
-  .hero__img {
-  }
 }

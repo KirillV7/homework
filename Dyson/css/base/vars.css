@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 :root {
   /* font-family */
   --font-family: OpenSans, sans-serif;
@@ -14,7 +21,7 @@
   --green-color: #68ae5c;
   --outline-color: #9747ff;
   --hero-color: #dddddd;
-  --active-color: #ababab;
+  --active-color: #abababce;
   --shadow-color: rgba(0, 0, 0, 0.05);
 
   /* transitions */

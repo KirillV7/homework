@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 .page {
   font-family: var(--font-family);
   font-weight: 400;
@@ -8,11 +15,18 @@
 }
 
 .section {
-  margin-bottom: 150px;
+  padding-block: 150px;
 }
+
 @media (width <= 768px) {
   .section {
-    margin-bottom: 70px;
+    padding: 60px 0 70px 0;
+  }
+}
+
+@media (width <= 390px) {
+  .section {
+    padding-block: 46px;
   }
 }
 
@@ -29,5 +43,6 @@ input:focus {
 }
 
 .img {
+  -o-object-fit: cover;
   object-fit: cover;
 }

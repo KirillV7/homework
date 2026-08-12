@@ -1,15 +1,28 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
 .expert-opinion {
   background-color: #f8f8f8;
   overflow: hidden;
+  padding-bottom: 0;
 }
 
 .expert-opinion__container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 @media (width <= 768px) {
   .expert-opinion__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
@@ -21,13 +34,14 @@
 @media (width <= 768px) {
   .expert-opinion__titles-description {
     display: block;
-    padding: 60px 0 70px 0;
+    padding-bottom: 70px;
   }
 }
 
 @media (width <= 390px) {
   .expert-opinion__titles-description {
-    padding-block: 46px;
+    display: block;
+    padding-bottom: 46px;
   }
 }
 
@@ -106,7 +120,6 @@
 }
 
 .expert-opinion__description {
-  padding-top: 150px;
   padding-bottom: 162px;
   z-index: var(--layer-1);
 }

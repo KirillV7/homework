@@ -1,16 +1,120 @@
-.category__footer {
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+.category__card-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  margin-top: auto;
+}
+
+.card__footer-quantity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
+  padding-inline: clamp(20px, -0.153rem + 2.92vw, 35px);
+  width: 220px;
+  height: 64px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 0%;
+  color: var(--main-color);
+  width: 100%;
+  height: clamp(36px, 5vw, 64px);
+  gap: 10px;
+  cursor: pointer;
+}
+
+@media (width <= 768px) {
+  .card__footer-quantity {
+    display: none;
+  }
+}
+
+.card__footer-button {
+  border-radius: 3px;
+  padding: 10px 20px;
+  width: 220px;
+  height: 64px;
+  background-color: var(--main-color);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  width: 100%;
+  height: clamp(36px, 5vw, 64px);
+  color: var(--white-color);
+  -webkit-transition: var(--transition-time);
+  transition: var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .card__footer-button:hover {
+    background-color: var(--accent-color);
+  }
+}
+.card__footer-button:active {
+  background-color: var(--active-color);
+}
+
+@media (width <= 1079px) {
+  .card__footer-button {
+    font-size: 13px;
+  }
+}
+
+@media (width <= 768px) {
+  .card__footer-button {
+    font-size: 16px;
+  }
+}
+
+.category__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
   gap: 20px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .category__footer-button {
   border: 1px solid var(--main-color);
   border-radius: 3px;
-  width: 64px;
-  height: 64px;
+  width: clamp(40px, 5vw, 64px);
+  height: clamp(40px, 5vw, 64px);
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: var(--transition-time);
   transition: var(--transition-time);
+}
+
+@media (width <= 850px) {
+  .category__footer-button-img {
+    width: 25px;
+    height: 23px;
+  }
 }
 
 .category__footer-button-icon {
@@ -23,20 +127,21 @@
     border-color: var(--accent-color);
   }
 }
-
 .category__footer-button:active {
   color: var(--active-color);
   border-color: var(--main-color);
 }
 
 .icon--style {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
 .category__footer-text {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 24px;
+  font-size: clamp(16px, 1.5vw, 24px);
   color: var(--main-color);
   margin-left: 10px;
 }

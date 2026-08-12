@@ -1,0 +1,232 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+.feedback {
+  background: #f8f8f8;
+  padding-bottom: 100px;
+}
+
+@media (width <= 768px) {
+  .feedback {
+    padding-block: 70px;
+  }
+}
+
+@media (width <= 390px) {
+  .feedback {
+    padding-block: 40px;
+  }
+}
+
+.feedback__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 135px;
+}
+
+@media (width <= 685px) {
+  .feedback__container {
+    gap: 80px;
+  }
+}
+
+@media (width <= 620px) {
+  .feedback__container {
+    gap: 20px;
+  }
+}
+
+@media (width <= 430px) {
+  .feedback__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.feedback__fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border: none;
+  padding: 0;
+  max-width: 555px;
+}
+
+.feedback__title {
+  font-family: var(--second-family);
+  font-weight: 900;
+  font-size: 42px;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+@media (width <= 768px) {
+  .feedback__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.feedback__input {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  color: #abababc9;
+  background: #f8f8f8;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #1111119d;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+@media (width <= 768px) {
+  .feedback__input {
+    font-size: 12px;
+    padding-bottom: 7px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (width <= 390px) {
+  .feedback__input {
+    padding-bottom: 6px;
+    margin-bottom: 14px;
+  }
+}
+
+.feedback__button {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--white-color);
+  margin-top: 70px;
+  padding: 15.5px 42.5px;
+  margin-bottom: 35px;
+  background-color: var(--main-color);
+  border-radius: 3px;
+  -webkit-transition: var(--transition-time);
+  transition: var(--transition-time);
+}
+
+@media (any-hover: hover) {
+  .feedback__button:hover {
+    background: var(--accent-color);
+  }
+}
+
+.feedback__button:active {
+  background: var(--active-color);
+}
+
+@media (width <= 875px) {
+  .feedback__button {
+    font-size: 18px;
+  }
+}
+
+@media (width <= 768px) {
+  .feedback__button {
+    font-size: 13px;
+    padding: 7px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (width <= 450px) {
+  .feedback__button {
+    font-size: 11px;
+    padding: 7px 16px;
+  }
+}
+
+@media (width <= 390px) {
+  .feedback__button {
+    font-size: 15px;
+    padding: 8px 25px;
+  }
+}
+
+.сheckbox__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+@media (width <= 768px) {
+  .сheckbox__block {
+    gap: 10px;
+  }
+}
+
+.feedback__input-checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
+  width: 30px;
+  height: 30px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  background-color: #f8f8f8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.feedback__input-checkbox:checked {
+  background-image: url("../../image/checkbox.svg");
+}
+
+@media (width <= 768px) {
+  .feedback__input-checkbox {
+    max-width: 19px;
+    max-height: 19px;
+  }
+}
+
+.feedback__checkbox-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--main-color);
+}
+
+@media (width <= 768px) {
+  .feedback__checkbox-text {
+    font-size: 10px;
+    max-width: 255px;
+  }
+}
+
+@media (width <= 390px) {
+  .feedback__checkbox-text {
+    font-weight: 300;
+  }
+}
