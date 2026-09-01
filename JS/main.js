@@ -170,15 +170,14 @@ console.log(board); */
 
 /* 1 задание */
 
-/* function calculateFinalPrice(baseСost, basicDiscount, taxRate) {
+/* const calculateFinalPrice = (baseСost, basicDiscount, taxRate) => {
   const discount = baseСost * (basicDiscount / 100);
   const discountedPrice = baseСost - discount;
   const tax = discountedPrice * taxRate;
   return discountedPrice + tax;
-}
+};
 console.log(calculateFinalPrice(100, 10, 0.2));
-console.log(calculateFinalPrice(100, 10, 0));
- */
+console.log(calculateFinalPrice(100, 10, 0)); */
 
 /* 2 задание */
 
@@ -186,16 +185,21 @@ console.log(calculateFinalPrice(100, 10, 0));
 const password = +prompt("Пароль");
 
 function checkAccess(name, password) {
-  if (name === "admin" && password === "123456") {
+  if (name === "admin" && password === 123456) {
     return "Доступ разрешен";
   } else {
     return "Доступ запрещен";
   }
 }
 
-alert(checkAccess()); */
+alert(checkAccess(name, password)); */
 
-/* Не понимаю почему при вводе корректных данных доступ запрещен? */
+/* Стрелочная фуекия и тернарный оператор */
+
+/* const checkAccess = (name, password) =>
+  name === "admin" && password === 123456
+    ? "Достпут разрешен"
+    : "Доступ запрещен"; */
 
 /* 3 задание */
 
@@ -220,7 +224,7 @@ alert(getTimeOfDay()); */
 
 /* 4 задание */
 
-function findFirstEven(start, end) {
+/* function findFirstEven(start, end) {
   for (i = start; i <= end; i++) {
     if (i % 2 === 0) return i;
   }
@@ -230,4 +234,60 @@ const result1 = findFirstEven(1, 10);
 const result2 = findFirstEven(9, 9);
 
 console.log(result1);
-console.log(result2);
+console.log(result2); */
+/* ===================================================================================================================================== */
+
+/* Обьекты */
+
+/* 1 задание */
+
+/* const person = {
+  lastName: "Кирилл",
+  firstName: "Готфрид",
+  age: 29,
+  placeOfWork: {
+    firm: "Южная",
+    post: "Бригадир",
+  },
+};
+
+console.log(person); */
+
+/* 2 задание */
+
+/* function isEmpty(object) {
+  for (const key in object) {
+    return true;
+  }
+  return false;
+}
+
+console.log(isEmpty()); */
+
+/* 3 задание */
+
+/* const task = {
+  title: " Спортивный зал",
+  description: "Для поддержания физ. формы",
+  isCompleted: true,
+};
+
+const price = { cost: 1000 };
+
+const task2 = { ...task, ...price };
+task2.title = "Бассейн";
+
+console.log(task);
+console.log(task2);
+
+for (const key in task) {
+  console.log(task[key]);
+}
+
+console.log(`${key}: ${task[key]}`); */
+
+/* Не понимаю как нужно применить функцию, да и в принципе не понимаю как правильно решить эту задачу. */
+
+/* 4 задание */
+
+/* Не понимаю */
